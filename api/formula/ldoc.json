@@ -1,0 +1,102 @@
+{
+  "name": "ldoc",
+  "full_name": "jbisfun/tap/ldoc",
+  "tap": "jbisfun/tap",
+  "oldnames": [],
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "Documentation generator for Lua source code",
+  "license": "MIT",
+  "homepage": "https://lunarmodules.github.io/ldoc/",
+  "versions": {
+    "stable": "1.5.0-14-ge1dff24",
+    "head": "HEAD",
+    "bottle": true
+  },
+  "urls": {
+    "stable": {
+      "url": "https://github.com/lunarmodules/LDoc/archive/e1dff24e1c519c96bbf95647c9aeac2dfb3b9ae0.tar.gz",
+      "tag": null,
+      "revision": null,
+      "using": null,
+      "checksum": "b64aa066e8d49c8e90cb14d8d5baa4d0e8810939a745e99e676ee72573404aa6"
+    },
+    "head": {
+      "url": "https://github.com/lunarmodules/LDoc.git",
+      "branch": "master",
+      "using": null
+    }
+  },
+  "patches": [],
+  "local_patch_checksums": {},
+  "revision": 0,
+  "version_scheme": 0,
+  "compatibility_version": null,
+  "autobump": true,
+  "no_autobump_message": null,
+  "skip_livecheck": false,
+  "bottle": {
+    "stable": {
+      "rebuild": 0,
+      "root_url": "https://github.com/jbisfun/homebrew-tap/releases/download/ldoc-1.5.0-14-ge1dff24",
+      "files": {
+        "arm64_tahoe": {
+          "cellar": ":any_skip_relocation",
+          "url": "https://github.com/jbisfun/homebrew-tap/releases/download/ldoc-1.5.0-14-ge1dff24/ldoc-1.5.0-14-ge1dff24.arm64_tahoe.bottle.tar.gz",
+          "sha256": "50f9b289f8eee611b1bae9d4865c4b3714d1e510ac5ccd6a6e0c622812cf99f5"
+        },
+        "x86_64_linux": {
+          "cellar": ":any",
+          "url": "https://github.com/jbisfun/homebrew-tap/releases/download/ldoc-1.5.0-14-ge1dff24/ldoc-1.5.0-14-ge1dff24.x86_64_linux.bottle.tar.gz",
+          "sha256": "e7814968d8d74f1622543df387e0c2d8a9df309c95333124d9cefe6ef9c430d0"
+        }
+      }
+    }
+  },
+  "pour_bottle_only_if": null,
+  "keg_only": false,
+  "keg_only_reason": null,
+  "options": [],
+  "build_dependencies": [
+    "luarocks"
+  ],
+  "dependencies": [
+    "lua"
+  ],
+  "test_dependencies": [],
+  "recommended_dependencies": [],
+  "optional_dependencies": [],
+  "no_linkage_dependencies": [],
+  "uses_from_macos": [],
+  "uses_from_macos_bounds": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "conflicts_with_reasons": [],
+  "link_overwrite": [],
+  "caveats": null,
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false,
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "deprecation_replacement_formula": null,
+  "deprecation_replacement_cask": null,
+  "deprecate_args": null,
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null,
+  "disable_replacement_formula": null,
+  "disable_replacement_cask": null,
+  "disable_args": null,
+  "post_install_steps": [],
+  "post_install_defined": false,
+  "service": null,
+  "tap_git_head": "dfffe9c13e52c8043b818a5c915fd004ec975835",
+  "ruby_source_path": "Formula/ldoc.rb",
+  "ruby_source_checksum": {
+    "sha256": "add58543af792c04665123d839bb9ce030e7f984feb70643edb1f5dfcc18d892"
+  },
+  "variations": {}
+}

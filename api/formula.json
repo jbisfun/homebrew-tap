@@ -1,0 +1,14 @@
+[
+  {
+    "name": "ldoc",
+    "full_name": "jbisfun/tap/ldoc",
+    "tap": "jbisfun/tap",
+    "aliases": [],
+    "oldnames": [],
+    "versions": {
+      "stable": "1.5.0-14-ge1dff24",
+      "head": "HEAD",
+      "bottle": true
+    }
+  }
+]
