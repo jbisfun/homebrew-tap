@@ -1,0 +1,15 @@
+#!/bin/bash
+# Write the formulae.brew.sh-shaped API for this tap (api/formula/<name>.json and the
+# api/formula.json index), so clients that don't evaluate Ruby (jbisfun/tool) can install
+# its bottles. Needs brew with this tap tapped; run on Linux to get Linux bottle data.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+tap="$(brew tap-info --json=v1 --installed | jq -r --arg p "$PWD" '.[] | select(.path == $p) | .name')"
+[[ -n "$tap" ]] || tap="${GITHUB_REPOSITORY_OWNER:?}/tap"
+rm -rf api
+mkdir -p api/formula
+for f in Formula/*.rb; do
+  name="$(basename "$f" .rb)"
+  brew info --json=v2 --variations "$tap/$name" | jq '.formulae[0]' > "api/formula/$name.json"
+done
+jq -s 'map({name, full_name, tap, aliases, oldnames, versions})' api/formula/*.json > api/formula.json
