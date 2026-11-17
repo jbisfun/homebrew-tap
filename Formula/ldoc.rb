@@ -23,7 +23,7 @@ class Ldoc < Formula
   end
 
   def install
-    luarocks_args = %W[make --tree=#{libexec} --lua-dir=#{Formula["lua"].opt_prefix} --deps-mode=none]
+    luarocks_args = %W[make --tree=#{libexec} --lua-dir=#{formula_opt_prefix("lua")} --deps-mode=none]
     resources.each do |r|
       r.stage { system "luarocks", *luarocks_args }
     end
