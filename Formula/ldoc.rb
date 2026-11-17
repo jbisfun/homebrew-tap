@@ -9,6 +9,12 @@ class Ldoc < Formula
   license "MIT"
   head "https://github.com/lunarmodules/LDoc.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/jbisfun/homebrew-tap/releases/download/ldoc-1.5.0-14-ge1dff24"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "50f9b289f8eee611b1bae9d4865c4b3714d1e510ac5ccd6a6e0c622812cf99f5"
+    sha256 cellar: :any,                 x86_64_linux: "e7814968d8d74f1622543df387e0c2d8a9df309c95333124d9cefe6ef9c430d0"
+  end
+
   depends_on "luarocks" => :build
   depends_on "lua"
 
